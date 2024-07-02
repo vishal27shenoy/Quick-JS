@@ -1,3 +1,4 @@
+import './Landing.css';
 import { Box, Flex ,Text} from "@chakra-ui/react";
 import React from "react";
 import Navbar from "../navbar/Navbar";
@@ -9,8 +10,8 @@ const Landing = () => {
     <Flex scrollSnapStop={"always"} flexDirection={"column"} height={"300vh"}>
       <Navbar />
       <Flex
-      height={"calc(100vh - 60px)"}
-      width={"100vw"}
+      minHeight={"calc(100vh - 60px)"}
+      width={"100%"}
       bg={"#0F0F11"}
       justifyContent={"center"}
       alignItems={"center"}
@@ -44,12 +45,12 @@ const Landing = () => {
       </Flex>
     </Flex>
     <Flex height={"200vh"}  bg={"#0F0F11"} flexDirection={"column"}>
-        <Flex height={"100vh"} width={"100%"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"} fontWeight={"bold"} scrollSnapAlign={"center"} scrollSnapStop={"always"}>
+        <Flex height={"100vh"} width={"100%"} className='flyin_animate' justifyContent={"center"} alignItems={"center"} flexDirection={"column"} fontWeight={"bold"} scrollSnapAlign={"center"} scrollSnapStop={"always"}>
             <Text color={"white"} fontSize={"50px"} >Works at any scale</Text>
             <Text color={"white"} fontSize={"13px"}>Quick JS supports you as your team and app grows</Text>
         </Flex>
-        <Flex height={"100vh"} width={"100%"} justifyContent={"center"} alignItems={"center"} flexDirection={"column"} fontWeight={"bold"} scrollSnapAlign={"center"} scrollSnapStop={"always"}>
-            <Text color={"white"} fontSize={"50px"} >Build for anyone</Text>
+        <Flex height={"100vh"} width={"100%"} className='flyin_animate' justifyContent={"center"} alignItems={"center"} flexDirection={"column"} fontWeight={"bold"} scrollSnapAlign={"center"} scrollSnapStop={"always"}>
+            <Text color={"white"} fontSize={"50px"}>Build for anyone</Text>
             <Text color={"white"} fontSize={"13px"}>Belive in Quick JS's error-logging , security and <br/> accessibility support for everyone around world</Text>
         </Flex>
     </Flex>

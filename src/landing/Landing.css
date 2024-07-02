@@ -1,0 +1,15 @@
+@keyframes animate-in {
+    0% { opacity: 0; transform: scale(.5); }
+    100% { opacity: 1; transform: scale(1); }
+   }
+   
+   @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10%); }
+   }
+   
+   .flyin_animate {
+      animation: animate-in linear forwards;
+      animation-timeline: view();
+      animation-range: entry;
+   }
